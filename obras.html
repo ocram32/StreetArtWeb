@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Art Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilogaleria.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Street Art<br>Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sobre...</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Obras</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Artistas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mapa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body>
+    <div class="container">
+    <div class="headerpags">
+        <h1 class="title">Obras</h1>
+        <p>Disfrutá de una selección de obras destacadas del street art</p>
+        <hr style="border: solid 1px #000;">
+        </div>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.0/css/lightgallery.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#lightgallery').lightGallery();
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/lightgallery-all.min.js"></script>
+    <div class="page-content page-container" id="page-content">
+        <div class="padding">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="lightgallery" class="row lightGallery">
+                                <a href="media/fondo.jpg" class="image-tile" data-abc="true"><img src="media/fondo.png" alt="image small"></a>
+
+                                <a href="https://i.imgur.com/Uv2Yqzo.jpg" class="image-tile" data-abc="true"><img src="https://i.imgur.com/Uv2Yqzo.jpg" alt="image small"></a>
+
+                                 <a href="https://i.imgur.com/xbTAITF.jpg" class="image-tile" data-abc="true"><img src="https://i.imgur.com/xbTAITF.jpg" alt="image small"></a>
+
+                                  <a href="https://i.imgur.com/EEguU02.jpg" class="image-tile" data-abc="true"><img src="https://i.imgur.com/EEguU02.jpg"></a>
+
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="street-art-text">
+                    <p class="street-art-texto">Street Art Web</p>
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <a class="ig" href="#">
+                    <img src="media/ig.png" alt="Instagram" class="instagram-icon" width="60" height="60">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>

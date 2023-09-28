@@ -1,17 +1,34 @@
   /* Fuentes */
+  @import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Jost&family=Poppins:wght@400&display=swap');
 
   @font-face {
-    font-family: 'graffiti_city'; 
-    src: url('fonts/graffiticity.otf') format('opentype'); 
+    font-family: 'graffiti_city';
+    src: url('fonts/graffiticity.otf') format('opentype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Jost&family=Poppins:wght@300&display=swap');
+
+  /* Generales */
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+body {
+    background-image: url(media/fondotags.jpg);
+}
 
 h1 {
     font-family: 'Freckle Face', cursive;
 }
 
+h2 {
+    font-family: 'Freckle Face', cursive;
+}
+
 p  {
     font-family: 'Poppins', sans-serif;
+    font-size: 400;
 }
 
 /**Menu**/
@@ -21,11 +38,13 @@ p  {
     padding-left: 20px;
 }
 .navbar-dark .navbar-nav .nav-link {
+    font-family: 'Freckle Face', cursive;
+    font-size: 25px;
     color: black;
     padding: 20px;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: white; 
+    color: white;
     background-image: url('media/pintada.png');
     background-size: cover;
 }
@@ -34,43 +53,178 @@ p  {
     font-size: 30px;
     text-align: center;
     color: black !important;
-    font-family:'graffiti_city', sans-serif;;
+    font-family:'graffiti_city', sans-serif;
 }
 
+  /* Columnas Home */
 
-/* Banner */
-.banner {
-    background-image: url('media/portada.jpg'); /* Ruta de la imagen del banner */
+.link-leer-mas {
+    font-family: 'Freckle Face', cursive;
+    font-size: 22px;
+    background-image: url('media/fondoboton.gif'); /* Ruta de la imagen de fondo */
     background-size: cover;
-    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 10px 40px;
+}
+
+.col-texto{
+    margin-top: 100px;
+}
+
+.img-sobre{
+    border-radius: 10px; /* Borde redondeado */
+    max-width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    height: 100%;
+}
+
+.headerpags {
+    height: 10vh;
+}
+
+.artist-card {
+    text-align: left; /* Alineación izquierda */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff70; /* Fondo blanco */
+    border: 1px solid #000; /* Borde negro */
+    border-radius: 10px; /* Bordes redondeados */
+}
+.artist-card img {
+    max-width: 100%; /* Ajustar imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    border: 2px solid #000; /* Borde negro para la imagen */
+}
+.artist-name {
+    font-family: 'Freckle Face', sans-serif;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.artist-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.headerartistas {
     display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centrar verticalmente */
-    text-align: left;
-    padding: 100px; /* Espacio alrededor del texto */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerpags {
+
+    justify-content: space-between;
+}
+.title {
+    font-family: 'Freckle Face', sans-serif;
+    font-size: 24px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+    width: 200px;
+}
+.search-icon {
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.mapa {
+    border: 5px solid #000 !important;
+    height: 900px;
+}
+
+.contact-form {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    font-family: 'Freckle Face', sans-serif;
+    border: none;
+    border: 1px solid #000;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: transparent; /* Fondo transparente */
+}
+.contact-form button {
+    background: url('media/fondoboton.gif');
+    color: white;
+    font-family: 'Freckle Face', sans-serif;
+    font-size: 24px; /* Tamaño de fuente reducido */
+    height: 40px; /* Altura reducida */
+    cursor: pointer;
+    text-align: left; /* Alineado a la izquierda */
+    border: none !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 10px 40px;
+    padding-top: 0px;
+}
+
+.contact-form .message-input {
+    height: 150px; /* Ajusta la altura según tu preferencia */
+}
+.contact-info {
+    text-align: left; /* Alineado a la izquierda */
+}
+.contact-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.contact-info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos personalizados para el footer */
+
+.footercontacto {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno del footer */
+}
+footer {
+    background-color: rgba(192, 192, 192, 0.459); /* Color de fondo del footer */
     color: white; /* Color del texto */
 }
 
-.banner h1 {
+.street-art-texto {
+    font-family: 'graffiti_city', sans-serif;
     font-size: 34px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: left;
+    color: black;
 }
 
-.saber-mas {
-    font-family: 'Poppins', sans-serif;
-    display: inline-block;
-    font-weight: bold;
-    position: relative;
+.instagram-icon {
+margin-top: 40px;
 }
 
-.saber-mas::after {
-    content: "";
-    background-image: url('media/pintada.png'); /* Ruta de la imagen de fondo del texto */
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Coloca la imagen de fondo detrás del texto */
+
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1570px;
+    }
 }

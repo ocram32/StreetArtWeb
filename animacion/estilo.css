@@ -1,0 +1,37 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.painting-text {
+    font-family: 'YourPaintingFont', sans-serif; /* Reemplaza 'YourPaintingFont' con tu fuente de pintura */
+    font-size: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.letter {
+    display: inline-block;
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: paint 1s ease-in-out forwards;
+}
+
+@keyframes paint {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
