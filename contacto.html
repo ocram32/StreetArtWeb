@@ -46,10 +46,12 @@
         <!-- Columna de formulario de contacto -->
         <div class="col-md-6">
             <div class="contact-form">
-                <input type="text" placeholder="Nombre...">
-                <input type="email" placeholder="Mail...">
-                <textarea class="message-input" placeholder="Mensaje..."></textarea>
+                <form id="contact-form" method="post">
+                <input type="text" placeholder="Nombre..." required>
+                <input type="email" placeholder="Mail..." required>
+                <textarea class="message-input" placeholder="Mensaje..." required></textarea>
                 <button>Enviar</button>
+                </form>
             </div>
         </div>
         <!-- Columna de información de contacto -->

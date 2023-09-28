@@ -56,12 +56,13 @@ p  {
     font-family:'graffiti_city', sans-serif;
 }
 
+
   /* Columnas Home */
 
 .link-leer-mas {
     font-family: 'Freckle Face', cursive;
     font-size: 22px;
-    background-image: url('media/fondoboton.gif'); /* Ruta de la imagen de fondo */
+    background-image: url('media/fondoboton.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -74,7 +75,7 @@ p  {
 }
 
 .img-sobre{
-    border-radius: 10px; /* Borde redondeado */
+    border-radius: 10px;
     max-width: 100%;
     border: 2px solid rgb(0, 0, 0);
     height: 100%;
@@ -85,17 +86,17 @@ p  {
 }
 
 .artist-card {
-    text-align: left; /* Alineación izquierda */
+    text-align: left;
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #ffffff70; /* Fondo blanco */
-    border: 1px solid #000; /* Borde negro */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff70;
+    border: 1px solid #000;
+    border-radius: 10px;
 }
 .artist-card img {
-    max-width: 100%; /* Ajustar imagen */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    border: 2px solid #000; /* Borde negro para la imagen */
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #000;
 }
 .artist-name {
     font-family: 'Freckle Face', sans-serif;
@@ -158,16 +159,16 @@ p  {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    background: transparent; /* Fondo transparente */
+    background: transparent;
 }
 .contact-form button {
     background: url('media/fondoboton.gif');
     color: white;
     font-family: 'Freckle Face', sans-serif;
-    font-size: 24px; /* Tamaño de fuente reducido */
-    height: 40px; /* Altura reducida */
+    font-size: 24px;
+    height: 40px;
     cursor: pointer;
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
     border: none !important;
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,10 +179,10 @@ p  {
 }
 
 .contact-form .message-input {
-    height: 150px; /* Ajusta la altura según tu preferencia */
+    height: 150px;
 }
 .contact-info {
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
 }
 .contact-info img {
     width: 40px;
@@ -202,11 +203,11 @@ p  {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 10px 0; /* Espaciado interno del footer */
+    padding: 10px 0;
 }
 footer {
-    background-color: rgba(192, 192, 192, 0.459); /* Color de fondo del footer */
-    color: white; /* Color del texto */
+    background-color: rgba(192, 192, 192, 0.459);
+    color: white;
 }
 
 .street-art-texto {
