@@ -229,9 +229,3 @@ margin-top: 40px;
         max-width: 1570px;
     }
 }
-
-@media (min-width: 1025px) {
-    .container{
-        max-width: 1000px;
-    }
-}
